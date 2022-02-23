@@ -6,7 +6,7 @@ export async function imageCaching(
   req: express.Request,
   res: express.Response,
   next: express.NextFunction
-) {
+): Promise<void> {
   try {
     const width: number = Number(req.query.width as string) as number;
     const height: number = Number(req.query.height as string) as number;
@@ -17,7 +17,7 @@ export async function imageCaching(
     ) as unknown as string;
 
     await access(cacheFile, constants.R_OK | constants.W_OK);
-   return res.sendFile(cacheFile);
+    res.sendFile(cacheFile);
   } catch (e) {
     next();
   }
