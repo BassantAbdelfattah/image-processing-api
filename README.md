@@ -24,10 +24,15 @@ This project is image processing api which resizes and saves images using  Nodej
  
  http://localhost:3000/api/images 
  Invalid Parmrs
+ 
+ 
  http://localhost:3000/api/images?fileName=fjord&width=200&height=200
  Display image after resizing
+ 
+ 
  http://localhost:3000/api/images?fileName=fjord&width=-200&height=200
  Invalid width 
+ 
  http://localhost:3000/api/images?fileName=test&width=200&height=200
  The image isn't exist
 
