@@ -23,7 +23,7 @@ This project is image processing api which resizes and saves images using  Nodej
  check if the app running successfully
  
  http://localhost:3000/api/images 
- Invalid Parmrs
+ Invalid
  
  
  http://localhost:3000/api/images?filename=fjord&width=200&height=200
